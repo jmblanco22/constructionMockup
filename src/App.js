@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+// Import all the components and pages
+import Layout from './components/Layout';
+import HomePage from './pages/Home.js';
+import AboutPage from './pages/About.js';
+import ServicesPage from './pages/Services.js';
+// Corrected the import path to match your file name 'Project.js'
+import ProjectPage from './pages/Project.js';
+import ContactPage from './pages/COntact.js';
 
 function App() {
+  const [page, setPage] = useState('Home');
+
+  const renderPage = () => {
+    switch (page) {
+      case 'Home':
+        return <HomePage setPage={setPage} />;
+      case 'About':
+        return <AboutPage />;
+      case 'Services':
+        return <ServicesPage />;
+      // Corrected the component name to ProjectPage
+      case 'Projects':
+        return <ProjectPage />;
+      case 'Contact':
+        return <ContactPage />;
+      default:
+        return <HomePage setPage={setPage} />;
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout setPage={setPage}>
+      {renderPage()}
+    </Layout>
   );
 }
 
