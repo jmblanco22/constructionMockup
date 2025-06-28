@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/construtionMockup/static/css/main.586096a4.css",
-    "main.js": "/construtionMockup/static/js/main.145d68b0.js",
-    "index.html": "/construtionMockup/index.html",
-    "main.586096a4.css.map": "/construtionMockup/static/css/main.586096a4.css.map",
-    "main.145d68b0.js.map": "/construtionMockup/static/js/main.145d68b0.js.map"
+    "main.css": "/constructionMockup/static/css/main.586096a4.css",
+    "main.js": "/constructionMockup/static/js/main.145d68b0.js",
+    "index.html": "/constructionMockup/index.html",
+    "main.586096a4.css.map": "/constructionMockup/static/css/main.586096a4.css.map",
+    "main.145d68b0.js.map": "/constructionMockup/static/js/main.145d68b0.js.map"
   },
   "entrypoints": [
     "static/css/main.586096a4.css",
